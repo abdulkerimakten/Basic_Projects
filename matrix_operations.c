@@ -119,85 +119,85 @@ int main(void)
 		
 					printf("enter size for ai of a: "); scanf("%d",&ai);
 					printf("enter size for aj of a: "); scanf("%d",&aj);
-   				printf("enter size for bi of b: "); scanf("%d",&bi);
-   				printf("enter size for bj of b: "); scanf("%d",&bj);
+   					printf("enter size for bi of b: "); scanf("%d",&bi);
+   					printf("enter size for bj of b: "); scanf("%d",&bj);
 
-   			if(aj==bi)
-   			{
-      			int a[ai][aj], b[bi][bj], i, j, k;
-      			int product[ai][bj];
+   				if(aj==bi)
+   				{
+      					int a[ai][aj], b[bi][bj], i, j, k;
+      					int product[ai][bj];
 
-      			for(i=0;i<ai;i++)
-      			{
-         			for(j=0;j<aj;j++)
-         			{
-            			printf("enter entry for matrix a[%d][%d]: ",i,j); scanf("%d",&a[i][j]);
-         			}
-      			}
+      					for(i=0;i<ai;i++)
+      					{
+         					for(j=0;j<aj;j++)
+         					{
+            						printf("enter entry for matrix a[%d][%d]: ",i,j); scanf("%d",&a[i][j]);
+         					}
+      					}
 
-      			for(i=0;i<bi;i++)
-      			{
-         			for(j=0;j<bj;j++)
-         			{
-         				printf("enter entry for matrix b[%d][%d]: ",i,j); scanf("%d",&b[i][j]);
-         			}
-      			}
+      					for(i=0;i<bi;i++)
+      					{
+         					for(j=0;j<bj;j++)
+         					{
+         						printf("enter entry for matrix b[%d][%d]: ",i,j); scanf("%d",&b[i][j]);
+         					}
+      					}
         
 
-      			for(i=0;i<ai;i++)
-      			{
-         			for(j=0;j<bj;j++)
-         			{
-            			product[i][j]=0;
+      					for(i=0;i<ai;i++)
+      					{
+         					for(j=0;j<bj;j++)
+         					{
+            						product[i][j]=0;
 							for(k=0;k<aj;k++)
-            			{
-               			product[i][j] += a[i][k]*b[k][j];
-            			}
-         			}	
-      			}
+            						{
+               							product[i][j] += a[i][k]*b[k][j];
+            						}
+         					}	
+      					}
 
-      			printf("\n---- MATRIX A ----\n");
-      			for(i=0;i<ai;i++)
-      			{
-         			for(j=0;j<aj;j++)
-         			{
-            			printf("%d ",a[i][j]);
-         			}
-         			printf("\n");
-      			}
+      					printf("\n---- MATRIX A ----\n");
+      					for(i=0;i<ai;i++)
+      					{
+         					for(j=0;j<aj;j++)
+         					{
+            						printf("%d ",a[i][j]);
+         					}
+         					printf("\n");
+      					}
 
-      			printf("\n---- MATRIX B ----\n");
-      			for(i=0;i<bi;i++)
-      			{
-         			for(j=0;j<bj;j++)
-         			{
-            			printf("%d ",b[i][j]);
-         			}
-         			printf("\n");
-      			}
+      					printf("\n---- MATRIX B ----\n");
+      					for(i=0;i<bi;i++)
+      					{
+         					for(j=0;j<bj;j++)
+         					{
+            						printf("%d ",b[i][j]);
+         					}
+         					printf("\n");
+      					}
 
-      			printf("\n---- PRODUCT MATRIX ----\n");
-      			for(i=0;i<ai;i++)
-      			{
-         			for(j=0;j<bj;j++)
-         			{
-            			printf("%d ",product[i][j]);
-         			}
-         			printf("\n");
-      			}
-   			}
+      					printf("\n---- PRODUCT MATRIX ----\n");
+      					for(i=0;i<ai;i++)
+      					{
+         					for(j=0;j<bj;j++)
+         					{
+            						printf("%d ",product[i][j]);
+         					}
+         					printf("\n");
+      					}
+   				}
 
-   			else
-   			{
-   	   		printf("NOTE: The size of one row of one matrix must be equal to the size of one column of the other matrix!!!\n");
-      			printf("enter valid values...\n\n");
-      			goto label2;
-   			}
+   				else
+   				{
+   	   				printf("NOTE: The size of one row of one matrix must be equal to the size of one column of the other matrix!!!\n");
+      					printf("enter valid values...\n\n");
+      					goto label2;
+   				}
 			}
    
    
-   		else if(choice2==2)
-   		{
+   			else if(choice2==2)
+   			{
 				int ai,aj,constant;
 		
 				printf("enter size for ai of a: "); scanf("%d",&ai);
@@ -205,15 +205,15 @@ int main(void)
 				printf("enter a value for constant: "); scanf("%d",&constant);
 		
 				int a[ai][aj], i, j;
-      		int product[ai][aj];
+      				int product[ai][aj];
 
-      		for(i=0;i<ai;i++)
-      		{
-        			for(j=0;j<aj;j++)
-         		{
-            		printf("enter entry for matrix a[%d][%d]: ",i,j); scanf("%d",&a[i][j]);
-         		}
-      		}
+      				for(i=0;i<ai;i++)
+      				{
+        				for(j=0;j<aj;j++)
+         				{
+            					printf("enter entry for matrix a[%d][%d]: ",i,j); scanf("%d",&a[i][j]);
+         				}
+      				}
 		
 				for(i=0;i<ai;i++)
 				{
@@ -225,25 +225,25 @@ int main(void)
 				}
 		
 				printf("\n---- MATRIX A ----\n");
-      		for(i=0;i<ai;i++)
-      		{
-         		for(j=0;j<aj;j++)
-         		{
-            		printf("%d ",a[i][j]);
-         		}
-         		printf("\n");
-   			}
+      				for(i=0;i<ai;i++)
+      				{
+         				for(j=0;j<aj;j++)
+         				{
+            					printf("%d ",a[i][j]);
+         				}
+         				printf("\n");
+   				}
    	
    	
-   			printf("\n---- PRODUCT MATRIX ----\n");
-      		for(i=0;i<ai;i++)
-      		{
-         		for(j=0;j<aj;j++)
-         		{
-            		printf("%d ",product[i][j]);
-         		}
-         		printf("\n");
-      		}
+   				printf("\n---- PRODUCT MATRIX ----\n");
+      				for(i=0;i<ai;i++)
+      				{
+         				for(j=0;j<aj;j++)
+         				{
+            					printf("%d ",product[i][j]);
+         				}
+         				printf("\n");
+      				}
 			}
 			
 			
